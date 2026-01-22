@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{feynmf}
+\usepackage{biblatex}[style = lesHouches]
+\addbibresource{Ex1-Assignment2.bib}
+
+\begin{document}
+
+\begin{figure}
+\centering
+\begin{fmffile}{diagrams}
+    %First Feynman diagram
+    \begin{fmfgraph*}(100,80)
+    \fmfleft{i1,i2} \fmfright{o1,o2}
+    \fmf{fermion}{i1,v1,v2,i2}
+    \fmf{photon, tension=0.5}{v1,o1}
+    \fmf{photon, tension=1.5}{v2,o2}
+    \fmflabel{$e^-$}{i1}
+    \fmflabel{$e^+$}{i2}
+    \fmflabel{$\gamma$}{o1}
+    \fmflabel{$\gamma$}{o2}
+    \end{fmfgraph*} \hspace{1in}
+    %Second Feynman diagram
+    \begin{fmfgraph*}(100,80)
+    \fmfleft{i1,i2} \fmfright{o1,o2}
+    \fmf{fermion}{i1,v1,v2,i2}
+    \fmf{photon, tension=1.5}{v1,o1}
+    \fmf{photon, tension=0.5}{v2,o2}
+    \fmflabel{$e^-$}{i1}
+    \fmflabel{$e^+$}{i2}
+    \fmflabel{$\gamma$}{o1}
+    \fmflabel{$\gamma$}{o2}
+    \end{fmfgraph*}
+\end{fmffile}
+\vspace{1cm}
+\caption{Feynman graphs for the lowest order contributions to electron-positron annihilation \cite{Particlephysics}.}
+\end{figure}
+
+%Display bibliography
+\printbibliography[heading=none]
+\end{document}
