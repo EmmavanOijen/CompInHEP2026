@@ -9,7 +9,8 @@
 \begin{figure}
 \centering
 \begin{fmffile}{diagrams}
-    %First Feynman diagram
+%First Feynman diagram
+\begin{fmffile}{diagram1}
     \begin{fmfgraph*}(100,80)
     \fmfleft{i1,i2} \fmfright{o1,o2}
     \fmf{fermion}{i1,v1,v2,i2}
@@ -19,8 +20,11 @@
     \fmflabel{$e^+$}{i2}
     \fmflabel{$\gamma$}{o1}
     \fmflabel{$\gamma$}{o2}
-    \end{fmfgraph*} \hspace{1in}
-    %Second Feynman diagram
+    \end{fmfgraph*}
+\end{fmffile}
+\hspace{1in}
+%Second Feynman diagram
+\begin{fmffile}{diagram2}
     \begin{fmfgraph*}(100,80)
     \fmfleft{i1,i2} \fmfright{o1,o2}
     \fmf{fermion}{i1,v1,v2,i2}
