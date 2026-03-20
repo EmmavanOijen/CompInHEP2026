@@ -6,7 +6,7 @@ LHAPDF_URL = http://www.hepforge.org/archive/lhapdf/LHAPDF-6.5.6.tar.gz
 LHAPDF_TGZ = $(notdir $(LHAPDF_URL))
 LHAPDF_DIR = $(basename $(basename $(LHAPDF_TGZ)))
 
-GARBAGE = $(wildcard *~ *.o *.a *.so pythia_simulation pythia8* *.job)
+GARBAGE = $(wildcard *~ *.o *.a *.so pythia_simulation pythia8* LHAPDF* *.job)
 
 PDFDIR = $(PWD)/LHAPDF
 PDFSET = cteq6l1.tar.gz
